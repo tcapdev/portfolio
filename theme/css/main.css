@@ -3329,7 +3329,7 @@ input, select, textarea {
 		margin: 0 auto;
 		max-width: 100%;
 		opacity: 1;
-		padding: 4.5em;
+		padding: 1.5em;    /* was 4.5em */
 		width: 90em;
 	}
 
@@ -3340,7 +3340,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			#wrapper {
-				padding: 3em;
+				padding: 2em;  /* was 3em */
 			}
 
 		}
