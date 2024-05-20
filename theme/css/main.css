@@ -3379,9 +3379,9 @@ input, select, textarea {
 /* Sidebar */
 
 	#sidebar {
-		margin-right: 3em;
-		min-width: 22em;
-		width: 22em;
+		margin-right: 2em;  /* was 3em */
+		min-width: 15em;  /* was 22em */
+		width: 15em;    /* was 22em */
 	}
 
 		#sidebar > * {
