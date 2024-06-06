@@ -67,16 +67,16 @@
 				}, 100);
 			});
 
-	// Intro.
-		var $intro = $('#intro');
+	// responsive
+		var $mainsub = $('#mainsub');
 
 		// Move to main on <large, back to sidebar on >large.
 			breakpoints.on('<large', function() {
-				$intro.prependTo($main);
+				$mainsub.appendTo($sidebar);
 			});
 
 			breakpoints.on('>=large', function() {
-				$intro.prependTo($sidebar);
+				$mainsub.appendTo($main);
 			});
 
 })(jQuery);

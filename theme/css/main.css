@@ -1084,7 +1084,7 @@ input, select, textarea {
 	ul.icons {
 		cursor: default;
 		list-style: none;
-		padding-left: 0;
+		padding-left: 1em;
 		margin: 0;
 	}
 
@@ -1180,6 +1180,7 @@ input, select, textarea {
 /* Mini Post */
 
 	.mini-post {
+		/*
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -1188,9 +1189,12 @@ input, select, textarea {
 		-webkit-flex-direction: column-reverse;
 		-ms-flex-direction: column-reverse;
 		flex-direction: column-reverse;
+		*/
 		background: #ffffff;
 		border: solid 1px rgba(160, 160, 160, 0.3);
-		margin: 0 0 2em 0;
+		margin: 1.2em;
+		flex: 25%;
+		max-width: 302px;
 	}
 
 		.mini-post .image {
@@ -1198,28 +1202,10 @@ input, select, textarea {
 			max-height: 18em;
 		}
 
-			.mini-post .image img {
-				-moz-transition: -moz-transform 0.2s ease-out;
-				-webkit-transition: -webkit-transform 0.2s ease-out;
-				-ms-transition: -ms-transform 0.2s ease-out;
-				transition: transform 0.2s ease-out;
-			}
-
-			.mini-post .image:hover img {
-				-moz-transform: scale(1.05);
-				-webkit-transform: scale(1.05);
-				-ms-transform: scale(1.05);
-				transform: scale(1.05);
-			}
-
 		.mini-post header {
 			padding: 1.25em 4.25em 0.1em 1.25em ;
 			min-height: 4em;
 			position: relative;
-			-moz-flex-grow: 1;
-			-webkit-flex-grow: 1;
-			-ms-flex-grow: 1;
-			flex-grow: 1;
 		}
 
 			.mini-post header h3 {
@@ -1242,8 +1228,37 @@ input, select, textarea {
 				top: 2em;
 			}
 
+	.mp-container {
+		display: flex;
+	    flex-wrap: wrap;
+	}
+
+		@media screen and (max-width: 1280px) {
+			.mini-post {
+				flex: 50%;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			.mp-container {
+				flex-direction: column;
+			}
+		}
+
+	
+
+
+
+
+
+
+
+
+
+
 	.mini-posts {
 		margin: 0 0 2em 0;
+
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -1284,6 +1299,8 @@ input, select, textarea {
 				}
 
 		}
+
+
 
 /* Post */
 
@@ -1721,6 +1738,7 @@ input, select, textarea {
 			display: block;
 		}
 
+
 /* Main */
 
 	#main {
@@ -1738,6 +1756,7 @@ input, select, textarea {
 
 		margin: 2em 3.5em 2em 1em;
 	}
+
 
 /* Sidebar */
 
