@@ -19,10 +19,17 @@
 				<!-- Main -->
 				<div id="main" >
 					<div id="mainsub" >
-    <h2>Authors on Portfolio</h2>
-    <ul>
-        <li><a href="./author/tcap.html">Tcap</a> (41)</li>
-    </ul>
+
+		<!-- Post -->
+		<article class="post">
+
+
+		  <img class="image_featured" src="./images/Home1.jpg" alt="use < > keys" />
+
+	            <a href="./approach-of-a-hamlet.html" id="next"></a>
+
+		</article>
+
 					</div>
 				</div>
 
@@ -32,14 +39,25 @@
 					<!-- Intro -->
 					<section id="intro">	
 						<a class="logo" href="."><img src="./images/logo.png" alt="" /></a>					
+    <div class="title">
+      <h2><a href="./category/home.html">Home</a></h2>							      
+    </div>		    
+    <div class="meta">
+      <time class="published" datetime="2009-01-26">2009</time>
+    </div>
 						
 					</section>
 
 
 					<!-- About -->
-					<section class="blurb">						
-						<p><i>Toon Cappuyns</i></p>						
-					</section>
+		<section class="blurb">
+			<h3>Home and trees</h3>
+			<p>watercolor on paper, 40x30cm</p>
+					
+			<div class="tags">
+		  			<a href="./tag/watercolor.html">watercolor</a>
+	  	</div>
+  	</section>
 
 					<!-- Footer -->
 					<section id="footer">
@@ -60,6 +78,20 @@
 			<script src="./theme/js/breakpoints.min.js"></script>
 			<script src="./theme/js/util.js"></script>
 			<script src="./theme/js/main.js"></script>
+<script>
+document.addEventListener('keydown', function(event) {
+    switch(event.key) {
+        case 'ArrowLeft':
+            // Navigate to the link associated with the 'ArrowDown' key
+            window.location.href = document.getElementById('prev').href;
+            break;
+        case 'ArrowRight':
+            // Navigate to the link associated with the 'ArrowRight' key
+            window.location.href = document.getElementById('next').href;
+            break;
+    }
+});
+</script>
 
 
 	</body>
